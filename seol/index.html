@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>설이 1st Birthday</title>
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="common.js">
+        <script src="lib/jquery-2.0.3.js"></script>
+        <script src="src/js/jquery.swipebox.js"></script>
+        <link rel="stylesheet" href="src/css/swipebox.css">
+
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="container">
+                <div id="top">
+                    <div id="main_img">
+                        <img src="img/main.jpg">
+                    </div>
+
+                    <div class="top_txt">
+                        <p>
+                            2023년 01월 14일 토요일 오후 6시 00분
+                            <br>
+                            디엘웨딩홀 & 클레이디뷔페 3F
+                        </p>
+                    </div>
+
+                    <div class="greeting">
+                        <div id="heart"><img src="/img/top-heart.gif"/></div>
+                        <span id="invite">초대합니다</span>
+                        <p id="greetP">
+                            사랑하는 우리 설이가<br/>
+                            첫 생일을 맞이했어요.<br/>
+                            기쁘고 행복한 순간에 소중한 분들을 초대합니다.<br/>
+                        </p>
+                    </div>
+
+                    <div class="calendar">
+                        <img src="img/cal.jpg"/>
+                    </div>
+                </div>
+
+                <!-- 갤러리 시작 -->
+                <div id="box-wrap">
+                    <h2>설이 사진첩</h2>
+                    <ul id="box-container">
+                        <li class="box">
+                            <a href="img/1.jpeg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/1.jpeg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/2.jpg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/2.jpg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/3.jpg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/3.jpg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/4.jpeg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/4.jpeg" alt="image" style="width:132%; margin-left:-10px">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/5.jpg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/5.jpg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/6.jpeg" class="swipebox" title="태어난지 O일">
+                                <img src="/img/6.jpeg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/7.jpeg" class="swipebox" title="태어난지 365일">
+                                <img src="/img/7.jpeg" alt="image">
+                            </a>
+                        </li>
+                        <li class="box">
+                            <a href="img/8.jpeg" class="swipebox" title="태어난지 365일">
+                                <img src="/img/8.jpeg" alt="image">
+                            </a>
+                        </li>
+                    </ul>
+                    <script type="text/javascript">
+                        ;
+                        (function ($) {
+
+                            $('.swipebox').swipebox();
+
+                        })(jQuery);
+                    </script>
+                </div>
+                <!-- 갤러리 -->
+
+                <div class="bottom">
+                    <h2>오시는 길</h2>
+                    <div class="addr">
+                        <p>
+                            <span id="dl">디엘웨딩홀&클레이디 뷔페 3F</span><br>
+                            <span id="addrCopy">부산광역시 동구 조방로 14</span>
+                            <button id="btn_div_copy">주소 복사하기</button><br>
+                        </p>
+                        <script>
+                            document
+                                .getElementById("btn_div_copy")
+                                .onclick = function () {
+                                    // div 내부 텍스트 취득
+                                    const valOfDIV = document
+                                        .getElementById("addrCopy")
+                                        .innerText;
+                                    // textarea 생성
+                                    const textArea = document.createElement('textarea');
+                                    // textarea 추가
+                                    document
+                                        .body
+                                        .appendChild(textArea);
+                                    // textara의 value값으로 div내부 텍스트값 설정
+                                    textArea.value = valOfDIV;
+                                    // textarea 선택 및 복사
+                                    textArea.select();
+                                    document.execCommand('copy');
+                                    // textarea 제거
+                                    document
+                                        .body
+                                        .removeChild(textArea);
+                                    alert('복사되었습니다.');
+                                }
+                        </script>
+                    </div>
+                    <div id="map">
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div
+                            id="daumRoughmapContainer1669697681376"
+                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+                        <script
+                            charset="UTF-8"
+                            class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum
+                                .roughmap
+                                .Lander({"timestamp": "1669697681376", "key": "2cs5o", "mapWidth": "420", "mapHeight": "300"})
+                                .render();
+                        </script>
+                    </div>
+
+                    <div class="way_guide">
+                        <ul>
+                            <li class="map_subway">
+                                <div class="way_tit txt-color">지하철</div>
+                                <div class="way_txt guide" data-name="map_subway">
+                                    1호선 범일역 하자, 2번 출구 (도보 7분거리)<br/>
+                                    2호선 문현역 하차, 3번 출구 이용 (시민회관 방면 도보 5분거리)<br/>
+                                </div>
+                            </li>
+                            <li class="map_bus">
+                                <div class="way_tit txt-color">버스</div>
+                                <div class="way_txt guide" data-name="map_bus">
+                                    [남포, 부산역, 중앙동 방면]<br>
+                                    <span class="bus-way">26, 41(자성대) / 22, 27, 40, 101(영도발) / 134(시민회관)</span><br/>
+                                    [대신동 방면]<br>
+                                    <span class="bus-way">40(시민회관)</span><br/>
+                                    [해운대, 센텀, 수영 방면]<br>
+                                    <span class="bus-way">40, 42(자성대)</span><br/>
+                                    [민락, 광안, 대연동 방면]<br>
+                                    <span class="bus-way">40, 41, 42, 83, 108(자성대) / 83-1(시민회관)</span><br/>
+                                    [사상, 엄궁, 주례, 개금, 서면 방면]<br>
+                                    <span class="bus-way">108, 138(구.영남예식장) / 68, 111, 168(시민회관)</span><br/>
+                                    [노포, 금정, 부산대 방면]<br>
+                                    <span class="bus-way">68(시민회관)</span><br/>
+                                    [동래, 사직, 양정 방면]<br>
+                                    <span class="bus-way">10(구.영남예식장) / 57, 80, 99(시민회관)</span><br/>
+                                </div>
+                            </li>
+                            <li class="map_after">
+                                <div class="way_tit txt-color">자가용</div>
+                                <div class="way_txt guide" data-name="map_after">
+                                    [내비게이션]
+                                    <br>
+                                    '디엘웨딩홀'검색 (부산 동구 조방로 14, 디엘웨딩홀&클레이디 뷔페)<br/>
+                                    <br/>
+                                    주차 : 동일타워(디엘웨딩홀 건물) 내 지하주차장 이용 가능<br/>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="footer">
+                    Copyright&copy wizdom All Rights Reserved
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
