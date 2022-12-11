@@ -23,21 +23,21 @@
                         <img src="img/main.jpg">
                     </div>
 
-                    <div class="top_txt">
-                        <p>
-                            2023년 01월 14일 토요일 오후 6시 00분
-                            <br>
-                            디엘웨딩홀 & 클레이디뷔페 3F
+                    <div class="greeting">
+                        <p id="greetP">
+                            설이가 태어난 지 일 년이 되는 날,<br/>
+                            소중한 분들을 초대합니다.<br/>
+                            <span class="color">아빠</span> 최준호 •  <span class="color">엄마</span> 김진희<br/>
                         </p>
                     </div>
 
-                    <div class="greeting">
-                        <div id="heart"><img src="/img/top-heart.gif"/></div>
+                    <div class="top_txt">
+                        <div id="heart"><img src="img/top-heart.gif"/></div>
                         <span id="invite">초대합니다</span>
-                        <p id="greetP">
-                            사랑하는 우리 설이가<br/>
-                            첫 생일을 맞이했어요.<br/>
-                            기쁘고 행복한 순간에 소중한 분들을 초대합니다.<br/>
+                        <p>
+                            2023년 01월 14일 토요일 오후 6시 00분
+                            <br>
+                            디엘웨딩홀 & 클레이디뷔페 3F 오도르룸
                         </p>
                     </div>
 
@@ -51,43 +51,44 @@
                     <h2>설이 사진첩</h2>
                     <ul id="box-container">
                         <li class="box">
-                            <a href="img/1.jpeg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/1.jpeg" alt="image">
+                            <a href="img/1.jpeg" class="swipebox" title="D+1 태어난 날">
+                                <img src="img/1.jpeg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/2.jpg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/2.jpg" alt="image">
+                            <a href="img/2.jpg" class="swipebox" title="D+50">
+                                <img src="img/2.jpg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/3.jpg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/3.jpg" alt="image">
+                            <a href="img/5.jpg" class="swipebox" title="D+100">
+                                <img src="img/5.jpg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/4.jpeg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/4.jpeg" alt="image" style="width:132%; margin-left:-10px">
+                            <a href="img/3.jpg" class="swipebox" title="D+120">
+                                <img src="img/3.jpg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/5.jpg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/5.jpg" alt="image">
+                            <a href="img/4.jpeg" class="swipebox" title="D+200">
+                                <img src="img/4.jpeg" alt="image" id="imgC">
+                            </a>
+                        </li>
+
+                        <li class="box">
+                            <a href="img/6.jpeg" class="swipebox" title="D+270">
+                                <img src="img/6.jpeg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/6.jpeg" class="swipebox" title="태어난지 O일">
-                                <img src="/img/6.jpeg" alt="image">
+                            <a href="img/7.jpeg" class="swipebox" title="D+365">
+                                <img src="img/7.jpeg" alt="image">
                             </a>
                         </li>
                         <li class="box">
-                            <a href="img/7.jpeg" class="swipebox" title="태어난지 365일">
-                                <img src="/img/7.jpeg" alt="image">
-                            </a>
-                        </li>
-                        <li class="box">
-                            <a href="img/8.jpeg" class="swipebox" title="태어난지 365일">
-                                <img src="/img/8.jpeg" alt="image">
+                            <a href="img/8.jpeg" class="swipebox" title="D+365">
+                                <img src="img/8.jpeg" alt="image">
                             </a>
                         </li>
                     </ul>
@@ -106,7 +107,7 @@
                     <h2>오시는 길</h2>
                     <div class="addr">
                         <p>
-                            <span id="dl">디엘웨딩홀&클레이디 뷔페 3F</span><br>
+                            <span id="dl">디엘웨딩홀&클레이디 뷔페 3F 오도르룸</span><br>
                             <span id="addrCopy">부산광역시 동구 조방로 14</span>
                             <button id="btn_div_copy">주소 복사하기</button><br>
                         </p>
@@ -140,20 +141,22 @@
                     <div id="map">
                         <!-- * 카카오맵 - 지도퍼가기 -->
                         <!-- 1. 지도 노드 -->
-                        <div
-                            id="daumRoughmapContainer1669697681376"
-                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                        <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
-                        <script
-                            charset="UTF-8"
-                            class="daum_roughmap_loader_script"
-                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <div id="daumRoughmapContainer1669778386449" class="root_daum_roughmap root_daum_roughmap_landing" style="margin:0 auto;"></div>
+
+                        <!--
+                        	2. 설치 스크립트
+                        	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                        -->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
                         <!-- 3. 실행 스크립트 -->
                         <script charset="UTF-8">
-                            new daum
-                                .roughmap
-                                .Lander({"timestamp": "1669697681376", "key": "2cs5o", "mapWidth": "420", "mapHeight": "300"})
-                                .render();
+                        	new daum.roughmap.Lander({
+                        		"timestamp" : "1669778386449",
+                        		"key" : "2cso6",
+                        		"mapWidth" : "360",
+                        		"mapHeight" : "360"
+                        	}).render();
                         </script>
                     </div>
 

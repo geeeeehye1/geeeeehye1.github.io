@@ -57,7 +57,7 @@
 			</div>';
 
         plugin.settings = {};
-        
+
 		$.swipebox.close = function () {
 			ui.closeSlide();
 		};
@@ -757,7 +757,7 @@
 				if ( a.search ) {
 					qs = JSON.parse( '{"' + a.search.toLowerCase().replace('?','').replace(/&/g,'","').replace(/=/g,'":"') + '"}' );
 				}
-				
+
 				// Extend with custom data
 				if ( $.isPlainObject( customData ) ) {
 					qs = $.extend( qs, customData, plugin.settings.queryStringData ); // The dev has always the final word
@@ -782,12 +782,12 @@
 					youtubeShortUrl = url.match(/(?:www\.)?youtu\.be\/([a-zA-Z0-9\-_]+)/),
 					vimeoUrl = url.match( /(?:www\.)?vimeo\.com\/([0-9]*)/ ),
 					qs = '';
-                
+
                 if ( youtubeUrl || youtubeShortUrl) {
 					if ( youtubeShortUrl ) {
 						youtubeUrl = youtubeShortUrl;
                     }
-                    
+
                     console.log( youtubeUrl );
 
 					qs = ui.parseUri( url, {

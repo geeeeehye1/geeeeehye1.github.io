@@ -1,11 +1,13 @@
 body {
     background-color: #fff4f4;
+    margin:0;
 }
 li {
     list-style: none;
 }
 #wrap {
     height: 100%;
+    width:100%;
 }
 #container {
     background-color: #fff;
@@ -14,6 +16,10 @@ li {
     padding-bottom: 30px;
     text-align: center;
 }
+
+.color {font-size: 0.9rem;color:#ecc1ab; display: inline-block; margin-top:10px;}
+
+
 #main_img img,
 .calendar img {
     width: 100%;
@@ -22,11 +28,11 @@ h2 {
     color: #ecc1ab;
     font-size: 1.125rem;
 }
-#top p {font-size:0.9375rem; line-height:25px; font-weight:600}
+#top p {font-size:0.9375rem; line-height:25px; font-weight:600; margin-bottom:0;}
 #heart img {width:30%;}
-#invite {display: inline-block; font-size:1.2rem; margin-bottom:10px;}
-.greeting {margin:20px 0;}
-.greeting #greetP {line-height:2rem;}
+#invite, #name {display: inline-block; font-size:1.2rem; margin-bottom:10px;}
+.greeting {margin-bottom:20px;}
+.greeting #greetP {line-height:2rem; margin-top:0;}
 
 body img {
     opacity: 1 !important;
@@ -71,6 +77,8 @@ body img {
     height: auto;
     vertical-align: bottom;
 }
+#imgC {width:132%; margin-left:-10px;}
+
 @media screen and (max-width: 799px) {
     #fork-this {
         display: none;
@@ -89,11 +97,14 @@ body img {
     }
 }
 @media screen and (max-width: 410px) {
-    .box {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  #box-container { padding:10px 5px 0; }
+  .box {width:24.5%; margin-left:2px;}
+  .box a { height:86px; }
+  .box a img {width:105%;}
+  .box:first-child,
+  :nth-child(5) { margin-left: 0; }
+  #imgC {width:148%; margin-left:-14px;}
+  .way_guide ul {padding-left:10px;}
 }
 
 /* Overwwrite old school button */
